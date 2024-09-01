@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Django Web Site</title>
+    <title>CRUD</title>
     <link rel="stylesheet" href="FDW.css">
 </head>
 <body>
@@ -18,5 +18,106 @@
             </ul>
         </nav>
     </header>
+    <main>
+        <h1 class="Definicion">Definicion de CRUD</h1>
+        <p>CRUD es un acrónimo que se refiere a las cuatros operaciones básicas de datos : </p>
+        <p>C: Create(Crear)</p>
+        <p>R: Read(Leer)</p>
+        <p>U: Update(Actualizar)</p>
+        <p>D: Delete(Eliminar)</p>
+
+        <br>
+        <hr>
+        <br>
+
+
+        <h1>Como crear un CRUD desde cero utilizando Django</h1>
+        <p class="cent"><strong> Paso 1: </strong>Crear el entorno virtual</p>
+        <img src="img/1.png" alt="">
+
+        <br>
+        <hr>
+        <br>
+
+        <p class="cent"><strong>Paso 2:</strong> Instalamos Django </p>
+        <img src="img/2.png" alt="">
+
+        <br>
+        <hr>
+        <br>
+
+        <p class="cent"><strong>Paso 3:</strong> Crear un nuevo proyecto de Django</p>
+        <img src="img/3.png" alt="">
+        <img src="img/3.1.png" alt="">
+
+        <br>
+        <hr>
+        <br>
+
+        <p class="cent"><strong>Paso 4:</strong> Crear la aplicación llamada CRUD</p>
+        <img src="img/4.png" alt="">
+
+        <br>
+        <hr>
+        <br>
+
+        <p class="cent"><strong>Paso 5:</strong> Configuramos nuestra proyecto y abrimos settings.py y agregamos la aplicación en INSTALLED APPS agregando crud.apps.CrudConfig </p>
+        <img src="img/5.png" alt="">
+
+        <br>
+        <hr>
+        <br>
+
+        <p class="cent"><strong>Paso 6:</strong> Creamos nuestros modelos en Models.py </p>
+        <img src="img/7.png" alt="">
+
+        <br>
+        <hr>
+        <br>
+
+        <p class="cent"><strong>Paso 7:</strong> A continuación, se verá el panel de administración </p>
+        <img src="img/8.png" alt="">
+
+        <br>
+        <hr>
+        <br>
+
+        <p class="cent"><strong>Paso 8:</strong> Ingresamos en el archivo views.py y agregamos el código </p>
+        <img src="img/9.png" alt="">
+
+        <br>
+        <hr>
+        <br>
+
+        <p class="cent"><strong>Paso 9:</strong> Posteriormente creamos una carpeta llamada urls.py debajo de crud y agregamos en el urls.py principal la url de CRUD</p>
+        <img src="img/10.png" alt="">
+        <img src="img/10.1.png" alt="">
+
+        <br>
+        <hr>
+        <br>
+
+        <p class="cent"><strong>Paso 10:</strong> Creamos una plantilla, pero primero creamos una carpeta llamada templates que contendrá los html</p>
+        <img src="img/11.png" alt="">
+
+        <br>
+        <hr>
+        <br>
+
+        <p class="cent"><strong>Paso 11:</strong> Posteriormente creamos un formulario</p>
+        <img src="img/12.png" alt="">
+        <img src="img/12.1.png" alt="">
+
+        <br>
+        <hr>
+        <br>
+
+        <p class="cent"><strong>Paso 12:</strong> Por último, hacemos cambios a la views, urls e index para agregar o eliminar y así queda el CRUD</p>
+        <img src="img/13.png" alt="">
+
+        <br>
+        <hr>
+        <br>
+    </main>
 </body>
 </html>

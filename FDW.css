@@ -43,7 +43,22 @@ table {
 p {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     padding-left: 20px;
+    padding-right: 45%;
 }
+
+.left {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding-left: 45%;
+    padding-right: 25px;
+}
+
+.cent {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding-left: 15%;
+    padding-right: 25px;
+}
+
+/* estilo titulos */
 
 h1 {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -53,6 +68,12 @@ h1 {
 h2 {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     padding-left: 20px;
+}
+
+.lft {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding-left: 45%;
+    padding-right: 20px;
 }
 h3 {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -92,5 +113,11 @@ img {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 20px; /* Espaciado superior opcional */
+    margin-top: 20px;
+}
+
+/* estilo pagina CRUD */
+
+div.Pasos {
+    text-align: center;
 }
