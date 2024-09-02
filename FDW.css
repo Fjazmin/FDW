@@ -1,7 +1,6 @@
-/* area del header */
-
+/* Área del header */
 header {
-    background-color: #092E20	;
+    background-color: #092E20;
     color: #fff;
     padding: 10px;
     font-family: Arial, sans-serif;
@@ -14,18 +13,78 @@ nav ul {
 }
 
 nav li {
-    display: inline;
+    display: inline-block;
+    position: relative; /* Necesario para el dropdown */
     margin-right: 20px;
 }
 
-nav a {
+nav a, nav p {
     text-decoration: none;
     color: #fff;
     font-size: 16px;
+    padding: 8px 12px;
+    display: block;
+    margin: 0;
 }
 
-nav a:hover {
+nav a:hover, nav p:hover {
     text-decoration: underline;
+}
+
+/* Dropdown */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    left: 0; /* Alinea el dropdown con el padre */
+}
+
+.dropdown-content a, .dropdown-content p {
+    color: #092E20;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-size: 14px;
+}
+
+.dropdown-content a:hover, .dropdown-content p:hover {
+    background-color: #ddd;
+}
+
+/* Mostrar el dropdown al pasar el mouse */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Dropdown */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    left: 0; /* Alinea el dropdown con el padre */
+}
+
+.dropdown-content a {
+    color: #092E20;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-size: 14px;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+/* Mostrar el dropdown al pasar el mouse */
+.dropdown:hover .dropdown-content {
+    display: block;
 }
 
 /* estilo de la tabla */
@@ -120,4 +179,60 @@ img {
 
 div.Pasos {
     text-align: center;
+}
+
+
+/* imagen us */
+
+/* Contenedor de la imagen */
+.image-container {
+    position: relative;
+    display: inline-block;
+}
+
+/* Estilos para la imagen */
+.image-container img {
+    display: block;
+    width: 100%; /* Ajusta según sea necesario */
+    height: auto; /* Ajusta según sea necesario */
+}
+
+/* Lista de información */
+.info-list {
+    display: none; /* Oculta la lista por defecto */
+    position: absolute;
+    top: 100%; /* Alinea la lista debajo de la imagen */
+    left: 0;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 10px;
+    width: 100%;
+}
+
+.info-list ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.info-list li {
+    padding: 8px;
+    border-bottom: 1px solid #ddd;
+}
+
+.info-list li:last-child {
+    border-bottom: none;
+}
+
+/* Mostrar la lista al pasar el mouse sobre la imagen */
+.image-container:hover .info-list {
+    display: block;
+}
+
+.ab {
+    width: 300px; /* Cambia el ancho según sea necesario */
+    height: auto; /* Mantiene la proporción de la imagen */
+    /* O usa height en lugar de auto para ajustar la altura */
+    /* height: 200px; */
 }
