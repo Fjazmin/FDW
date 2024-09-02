@@ -14,7 +14,7 @@ nav ul {
 
 nav li {
     display: inline-block;
-    position: relative; /* Necesario para el dropdown */
+    position: relative;
     margin-right: 20px;
 }
 
@@ -39,7 +39,7 @@ nav a:hover, nav p:hover {
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
-    left: 0; /* Alinea el dropdown con el padre */
+    left: 0;
 }
 
 .dropdown-content a, .dropdown-content p {
@@ -67,7 +67,7 @@ nav a:hover, nav p:hover {
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
-    left: 0; /* Alinea el dropdown con el padre */
+    left: 0;
 }
 
 .dropdown-content a {
@@ -141,22 +141,40 @@ h4 {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-/* estilo lista  */
+/* estilo lista */
 
-ul {
+.ventajas-desventajas {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-ul li {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+.ventajas-desventajas h4 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #092E20;
 }
 
-ul li ul {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+.ventajas-desventajas ul {
+    list-style-type: disc;
+    margin-left: 20px;
+    padding-left: 10px;
 }
 
-ul li ul li {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+.ventajas-desventajas ul ul {
+    list-style-type: circle;
+    margin-left: 20px;
+    padding-left: 10px;
+}
+
+.ventajas-desventajas li {
+    margin-bottom: 10px;
+    line-height: 1.5em;
+}
+
+.ventajas-desventajas hr {
+    border: 0;
+    height: 1px;
+    background: #092E20;
+    margin: 20px 0;
 }
 
 /* Línea horizontal */
@@ -181,9 +199,6 @@ div.Pasos {
     text-align: center;
 }
 
-
-/* imagen us */
-
 /* Contenedor de la imagen */
 .image-container {
     position: relative;
@@ -193,21 +208,22 @@ div.Pasos {
 /* Estilos para la imagen */
 .image-container img {
     display: block;
-    width: 100%; /* Ajusta según sea necesario */
-    height: auto; /* Ajusta según sea necesario */
+    width: 100%;
+    height: auto;
 }
 
 /* Lista de información */
 .info-list {
-    display: none; /* Oculta la lista por defecto */
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    display: none;
     position: absolute;
-    top: 100%; /* Alinea la lista debajo de la imagen */
-    left: 0;
+    top: 0;
+    left: 100%;
     background-color: #f9f9f9;
     border: 1px solid #ddd;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     padding: 10px;
-    width: 100%;
+    width: 200px;
 }
 
 .info-list ul {
@@ -225,14 +241,176 @@ div.Pasos {
     border-bottom: none;
 }
 
-/* Mostrar la lista al pasar el mouse sobre la imagen */
+
 .image-container:hover .info-list {
     display: block;
 }
 
+
+/* imagen us */
+
 .ab {
-    width: 300px; /* Cambia el ancho según sea necesario */
-    height: auto; /* Mantiene la proporción de la imagen */
-    /* O usa height en lugar de auto para ajustar la altura */
-    /* height: 200px; */
+    width: 300px;
+    height: auto;
+}
+
+
+
+/* estilo pagina contacto */
+
+/* General */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+.contenedor {
+    width: 400px;
+    background: #F8F8F8;
+    padding: 30px;
+    margin: auto;
+    margin-top: 75px;
+    border-radius: 4px;
+    font-family: 'calibri';
+    color: #44B78B;
+    box-shadow: 7px 13px 37px #0C4B33;
+}
+
+.contenedor h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.controls {
+    width: 100%;
+    background: #F8F8F8;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    border: 0.5px solid #8CA59F;
+    font-family: 'calibri';
+    font-size: 18px;
+    color: #0E1117;
+}
+
+.contenedor p {
+    height: 40px;
+    text-align: center;
+    font-size: 18px;
+    line-height: 40px;
+}
+
+.contenedor a {
+    color: #a0a0a0;
+    text-decoration: none;
+}
+
+.contenedor a:hover {
+    color: #5d9185;
+    text-decoration: underline;
+}
+
+.contenedor .botons {
+    width: 100%;
+    background: #063721;
+    border: none;
+    padding: 12px;
+    color: #b7c2bf;
+    margin: 16px 0;
+    font-size: 16px;
+}
+
+
+
+/* Mensaje */
+.forma {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding-bottom: 15px;
+    justify-content: space-around;
+}
+
+select {
+    padding: 5px;
+    font-size: 14px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    background-color: #F8F8F8;
+    cursor: pointer;
+}
+
+label {
+    font-size: 19px;
+    color: #8CA59F;
+}
+
+select:focus {
+    border-color: #73a197;
+    outline: none;
+}
+
+
+/* Aviso de privacidad */
+.politica{
+    text-align: center;
+    color: #b7c2bf;
+    align-items: center;
+    gap: 10px;
+    padding-bottom: 10px;
+}
+
+
+
+/* Botón */
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    background-color: #44B78B;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.enviar{
+    padding-top: 10px;
+    text-align: center;
+    justify-content: center;
+}
+
+button:hover {
+    background-color: #59cea1;
+}
+
+::placeholder{
+    color: #8CA59F;
+}
+
+
+/* Politica de privacidad */
+
+.pp{
+    background: #F8F8F8;
+    padding: 40px;
+    margin: auto;
+    margin-top: 60px;
+    font-family: 'calibri';
+    color: #0C4B33;
+
+}
+
+.pp h2 {
+    font-size: 40px;
+    margin-bottom: 15px;
+    color: #267557;
+}
+
+.pp ul{
+    list-style: circle inside none;
 }

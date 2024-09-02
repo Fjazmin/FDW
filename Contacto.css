@@ -1,0 +1,158 @@
+/* General */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: block;
+}
+
+.contenedor {
+    width: 400px;
+    background: #F8F8F8;
+    padding: 30px;
+    margin: auto;
+    margin-top: 75px;
+    border-radius: 4px;
+    font-family: 'calibri';
+    color: #44B78B;
+    box-shadow: 7px 13px 37px #0C4B33;
+}
+
+.contenedor h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.controls {
+    width: 100%;
+    background: #F8F8F8;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    border: 0.5px solid #8CA59F;
+    font-family: 'calibri';
+    font-size: 18px;
+    color: #0E1117;
+}
+
+.contenedor p {
+    height: 40px;
+    text-align: center;
+    font-size: 18px;
+    line-height: 40px;
+}
+
+.contenedor a {
+    color: #a0a0a0;
+    text-decoration: none;
+}
+
+.contenedor a:hover {
+    color: #5d9185;
+    text-decoration: underline;
+}
+
+.contenedor .botons {
+    width: 100%;
+    background: #063721;
+    border: none;
+    padding: 12px;
+    color: #b7c2bf;
+    margin: 16px 0;
+    font-size: 16px;
+}
+
+
+
+/* Mensaje */
+.forma {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding-bottom: 15px;
+    justify-content: space-around;
+}
+
+select {
+    padding: 5px;
+    font-size: 14px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    background-color: #F8F8F8;
+    cursor: pointer;
+}
+
+label {
+    font-size: 19px;
+    color: #8CA59F;
+}
+
+select:focus {
+    border-color: #73a197;
+    outline: none;
+}
+
+
+/* Aviso de privacidad */
+.politica{
+    text-align: center;
+    color: #b7c2bf;
+    align-items: center;
+    gap: 10px;
+    padding-bottom: 10px;
+}
+
+
+
+/* Botón */
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    background-color: #44B78B;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.enviar{
+    padding-top: 10px;
+    text-align: center;
+    justify-content: center;
+}
+
+button:hover {
+    background-color: #59cea1;
+}
+
+::placeholder{
+    color: #8CA59F;
+}
+
+
+/* Politica de privacidad */
+
+.pp{
+    background: #F8F8F8;
+    padding: 40px;
+    margin: auto;
+    margin-top: 60px;
+    font-family: 'calibri';
+    color: #0C4B33;
+
+}
+
+.pp h2 {
+    font-size: 40px;
+    margin-bottom: 15px;
+    color: #267557;
+}
+
+.pp ul{
+    list-style: circle inside none;
+}
