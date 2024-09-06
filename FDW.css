@@ -415,3 +415,11 @@ button:hover {
 .pp ul{
     list-style: circle inside none;
 }
+
+/* pagina recursos */
+
+embed {
+    width: 80%;
+    height: 600px;
+    padding-left: 20%;
+}
