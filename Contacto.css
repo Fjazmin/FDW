@@ -9,64 +9,55 @@ body {
     display: block;
 }
 
-.contenedor {
-    width: 400px;
-    background: #F8F8F8;
-    padding: 30px;
-    margin: auto;
-    margin-top: 75px;
-    border-radius: 4px;
-    font-family: 'calibri';
-    color: #44B78B;
-    box-shadow: 7px 13px 37px #0C4B33;
-}
-
-.contenedor h2 {
-    font-size: 30px;
-    margin-bottom: 20px;
-    text-align: center;
-}
-
-.controls {
-    width: 100%;
-    background: #F8F8F8;
+/* Regresar */
+header {
+    background-color: #0C4B33;
+    color: #fff;
     padding: 10px;
-    border-radius: 4px;
-    margin-bottom: 16px;
-    border: 0.5px solid #8CA59F;
-    font-family: 'calibri';
-    font-size: 18px;
-    color: #0E1117;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-.contenedor p {
-    height: 40px;
-    text-align: center;
-    font-size: 18px;
-    line-height: 40px;
+nav{
+    box-shadow: #a0a0a0;
+}
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
-.contenedor a {
-    color: #a0a0a0;
+nav li {
+    display: inline-block;
+    position: relative;
+    margin-right: 20px;
+}
+
+nav a{
     text-decoration: none;
-}
-
-.contenedor a:hover {
-    color: #5d9185;
-    text-decoration: underline;
-}
-
-.contenedor .botons {
-    width: 100%;
-    background: #063721;
-    border: none;
-    padding: 12px;
-    color: #b7c2bf;
-    margin: 16px 0;
+    color: #44B78B;
     font-size: 16px;
+    padding: 0 1.5rem;
+    display: block;
+    margin: 0;
 }
 
+header nav a{
+    font-size: 40px;
+}
 
+nav a:hover, nav p:hover {
+    color:#0C4B33;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 50px;
+    background-color: #F8F8F8;
+    color: #fff;
+    box-shadow: 2px 4px 15px #b7c2bf;
+}
 
 /* Mensaje */
 .forma {
@@ -96,7 +87,6 @@ select:focus {
     outline: none;
 }
 
-
 /* Aviso de privacidad */
 .politica{
     text-align: center;
@@ -105,8 +95,6 @@ select:focus {
     gap: 10px;
     padding-bottom: 10px;
 }
-
-
 
 /* Botón */
 button {
@@ -134,7 +122,6 @@ button:hover {
     color: #8CA59F;
 }
 
-
 /* Politica de privacidad */
 
 .pp{
@@ -144,7 +131,6 @@ button:hover {
     margin-top: 60px;
     font-family: 'calibri';
     color: #0C4B33;
-
 }
 
 .pp h2 {

@@ -9,6 +9,7 @@
 <body>
 
     <header>
+        <a href="index.html" class="logo"> <b>django</b> </a>
         <nav>
             <ul>
                 <li class="dropdown">
@@ -45,21 +46,56 @@
         </nav>
     </header>
     <main>
-        <br>
-        <h1>En esta seccion encontraras documentos que nos ayudaros a la realizacion de esta pagina web</h1>
-        <br>
-        <hr>
-        <br>
-        <h2>HTML</h2>
-        <br>
-        <embed src="recursos/Estructura HTML.pdf" type="application/pdf">
-        <br>
-        <br>
-        <hr>
-        <br>
-        <h2>CSS</h2>
+        <section class="fondo">
+            <div class="rtexto">
+                <h2>Detras del codigo</h2>
+                <p>En esta sección encontrarás los documentos y herramientas clave que nos ayudaron a dar vida a esta página web. Desde guías de diseño, documentación técnica, tutoriales y ejemplos prácticos, estos recursos fueron fundamentales en cada paso del proceso de desarrollo. Si deseas profundizar en las tecnologías que utilizamos o aprender más sobre el desarrollo web, ¡estos materiales te serán de gran ayuda!</p>            
+            </div>
+        </section>
 
-        <embed src="recursos/Estilos CSS.pdf" type="application/pdf">
+        <section class="recursos">
+            <div class="pdf">
+                <h2>HTML</h2>
+                <br>
+                <embed src="recursos/Estructura HTML.pdf" type="application/pdf">
+            </div>
+        </section>
+
+        <section class="recursos">
+            <div class="pdf">
+                <h2>CSS</h2>
+                <br>
+                <embed src="recursos/Estilos CSS.pdf" type="application/pdf">
+            </div>
+        </section>
+
+        <section class="recursos">
+            <div class="pdf">
+                <h2>JAVASCRIPT</h2>
+                <br>
+                <embed src="recursos/Funciones web con JavaScript.pdf" type="application/pdf">
+            </div>
+        </section>
+
+        <section class="recursos">
+            <div class="pdf">
+                <h2>DJANGO</h2>
+                <br>
+                <embed src="recursos/Introducción a Django.pdf" type="application/pdf">
+            </div>
+        </section>
+<br>
+<br>
     </main>
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2024 Todos los derechos reservados</p>
+            <ul class="footer-list">
+                <li><a href="politica.html">Política de Privacidad</a></li>
+                <li><a href="politica.html">Términos y Condiciones</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </div>
+    </footer>
 </body>
 </html>
